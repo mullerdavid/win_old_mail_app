@@ -1,0 +1,74 @@
+Windows Registry Editor Version 5.00
+ 
+[HKEY_CLASSES_ROOT\.mkv]
+@="WMP11.AssocFile.MKV"
+"Content Type"="video/matroska"
+"PerceivedType"="video"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\WMPlayer\Extensions\.mkv]
+"PerceivedType"="video"
+"Permissions"=dword:0000000f
+"Runtime"=dword:00000007
+ 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MediaPlayer\MLS\Extensions]
+"mkv"="video"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MKV\shell\PlayWithVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --no-playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MKV\shell\AddToPlaylistVLC]
+@="Hozzáadás a VLC lejátszólistájához"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MKV\shell\AddToPlaylistVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MKV\shell\PlayWithVLC]
+@="Lejátszás a VLC médialejátszóval"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.AVI\shell\PlayWithVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --no-playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.AVI\shell\AddToPlaylistVLC]
+@="Hozzáadás a VLC lejátszólistájához"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.AVI\shell\AddToPlaylistVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.AVI\shell\PlayWithVLC]
+@="Lejátszás a VLC médialejátszóval"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MP4\shell\PlayWithVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --no-playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MP4\shell\AddToPlaylistVLC]
+@="Hozzáadás a VLC lejátszólistájához"
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MP4\shell\AddToPlaylistVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\WMP11.AssocFile.MP4\shell\PlayWithVLC]
+@="Lejátszás a VLC médialejátszóval"
+
+[HKEY_CLASSES_ROOT\AppX6eg8h5sxqq90pv53845wmnbewywdqq5h\shell\PlayWithVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --no-playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\AppX6eg8h5sxqq90pv53845wmnbewywdqq5h\shell\AddToPlaylistVLC]
+@="Hozzáadás a VLC lejátszólistájához"
+
+[HKEY_CLASSES_ROOT\AppX6eg8h5sxqq90pv53845wmnbewywdqq5h\shell\AddToPlaylistVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\AppX6eg8h5sxqq90pv53845wmnbewywdqq5h\shell\PlayWithVLC]
+@="Lejátszás a VLC médialejátszóval"
+
+[HKEY_CLASSES_ROOT\AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs\shell\PlayWithVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --no-playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs\shell\AddToPlaylistVLC]
+@="Hozzáadás a VLC lejátszólistájához"
+
+[HKEY_CLASSES_ROOT\AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs\shell\AddToPlaylistVLC\command]
+@="\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --started-from-file --playlist-enqueue \"%1\""
+
+[HKEY_CLASSES_ROOT\AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs\shell\PlayWithVLC]
+@="Lejátszás a VLC médialejátszóval"
