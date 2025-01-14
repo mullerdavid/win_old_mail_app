@@ -68,6 +68,13 @@ function Escape-Arg {
     return "`"$Arg`""
 }
 	
+# Enable developer mode
+$RegistryKeyPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock"
+if (-not(Test-Path -Path $RegistryKeyPath)) {
+    New-Item -Path $RegistryKeyPath -ItemType Directory -Force | Out-Null
+}
+New-ItemProperty -Path $RegistryKeyPath -Name AllowDevelopmentWithoutDevLicense -PropertyType DWORD -Value 1 -erroraction SilentlyContinue | Out-Null
+
 # remove packages
 Get-AppxPackage Microsoft.windowscommunicationsapps -AllUsers | Remove-AppxPackage -AllUsers
 Get-AppxPackage Microsoft.OutlookForWindows -AllUsers | Remove-AppxPackage -AllUsers
