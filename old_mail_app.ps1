@@ -191,7 +191,7 @@ $ProjectXml.Package.Dependencies.PackageDependency | ForEach-Object {
 	}
 	if (-not $found) {
 		Get-Item "$($bundlepath | Split-Path)\*" -Include "$($dep)*_x64_*.appx" | ForEach-Object {
-			Add-AppxPackage $_.FullName
+			Add-AppxPackage $_.FullName -ForceApplicationShutdown
 		}
 	}
 }
